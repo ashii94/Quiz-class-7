@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>AI Assessment | Raasti Class 7</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Google Fonts for Beautiful Typography -->
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@700&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    /* ... CSS as in your provided file ... */
+  </style>
+</head>
+<body>
+  <!-- First Page: Welcome / Theme -->
+  <div class="theme-page" id="welcomePage">
+    <div class="bubble bubble1"></div>
+    <div class="bubble bubble2"></div>
+    <div class="bubble bubble3"></div>
+    <div class="bubble bubble4"></div>
+    <img class="robot-img" src="https://cdn.pixabay.com/photo/2017/01/31/13/14/robot-2027195_960_720.png" alt="Robot Cartoon">
+    <div class="theme-title">Artificial Intelligence</div>
+    <div class="theme-subtitle">Assessment &mdash; Raasti Class 7</div>
+    <button class="styled-btn" onclick="showAssessment()">Start Assessment</button>
+  </div>
+  <!-- Second Page: Assessment -->
+  <div class="assessment-page" id="assessmentPage" style="display:none;">
+    <div class="upper-space"></div>
+    <div class="timers">
+      <div class="timer-box">
+        <svg class="timer-icon" fill="#ff6f61" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10" stroke="#ff6f61" stroke-width="2" fill="none"/><rect x="11" y="6" width="2" height="7" rx="1" fill="#ff6f61"/><circle cx="12" cy="17" r="1" fill="#ff6f61"/></svg>
+        <span id="mcq-timer">10:00</span> MCQs
+      </div>
+      <div class="timer-box">
+        <svg class="timer-icon" fill="#ffd600" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10" stroke="#ffd600" stroke-width="2" fill="none"/><rect x="11" y="6" width="2" height="7" rx="1" fill="#ffd600"/><circle cx="12" cy="17" r="1" fill="#ffd600"/></svg>
+        <span id="total-timer">30:00</span> Total
+      </div>
+    </div>
+    <form id="assessmentForm" autocomplete="off">
+      <div class="section-label">Section A: Multiple Choice Questions (10 × 1 mark = 10 marks)</div>
+      <!-- MCQs -->
+      <!-- ... MCQ HTML as provided ... -->
+      <div class="mcq">
+        <div class="mcq-title">1. Which of the following best defines Artificial Intelligence?</div>
+        <div class="mcq-options">
+          <label><input type="radio" name="q1" value="a"> a) A robot that talks to you</label>
+          <label><input type="radio" name="q1" value="b"> b) A program that can solve problems and learn like humans</label>
+          <label><input type="radio" name="q1" value="c"> c) Any software on a computer</label>
+          <label><input type="radio" name="q1" value="d"> d) A machine with buttons and lights</label>
+        </div>
+      </div>
+      <!-- ...repeat for questions 2-10... -->
+      <div class="mcq">
+        <div class="mcq-title">10. Which of the following steps is part of the AI learning process?</div>
+        <div class="mcq-options">
+          <label><input type="radio" name="q10" value="a"> a) Buying a new computer</label>
+          <label><input type="radio" name="q10" value="b"> b) Collecting and cleaning data</label>
+          <label><input type="radio" name="q10" value="c"> c) Turning off the device</label>
+          <label><input type="radio" name="q10" value="d"> d) Charging the battery</label>
+        </div>
+      </div>
+
+      <div class="section-label">Section B: Answer the Following (5 × 2 marks = 10 marks)</div>
+      <!-- ...Short Answer HTML as provided... -->
+      <div class="short-answer">
+        <label>1. What is Artificial Intelligence in simple words?
+          <input type="text" name="b1" maxlength="120" required>
+        </label>
+      </div>
+      <!-- ...repeat for questions 2-5... -->
+      <div class="short-answer">
+        <label>5. Name one advantage and one challenge of AI.
+          <input type="text" name="b5" maxlength="120" required>
+        </label>
+      </div>
+
+      <div class="section-label">Section C: Conceptual Question (1 × 5 marks = 5 marks)</div>
+      <div class="short-answer">
+        <label>
+          Q: Explain how AI works using a simple example, starting from data collection to giving a result.
+          <textarea name="c1" rows="4" maxlength="350" required placeholder="E.g., How AI helps find a cat in a photo..."></textarea>
+        </label>
+      </div>
+
+      <button class="submit-btn" type="submit">Submit</button>
+    </form>
+  </div>
+  <!-- Result Modal -->
+  <div class="result-modal" id="resultModal">
+    <div class="result-content">
+      <img class="result-robot" id="resultRobot" src="https://cdn.pixabay.com/photo/2017/01/31/13/14/robot-2027195_960_720.png" alt="Robot Result">
+      <div class="result-title" id="resultTitle"></div>
+      <div class="result-score" id="resultScore"></div>
+      <div class="result-msg" id="resultMsg"></div>
+      <button class="close-btn" onclick="closeResult()">Close</button>
+    </div>
+  </div>
+  <script>
+    // ... JavaScript logic as in your provided file ...
+  </script>
+</body>
+</html>
